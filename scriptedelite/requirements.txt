@@ -1,0 +1,20 @@
+# ScriptedElite AI - Requirements (PS5 Optimization Archetype)
+# Activate venv first: .\.venv\Scripts\Activate.ps1
+# Then: pip install -r requirements.txt
+
+PySide6>=6.7
+ultralytics>=8.3
+mss>=9.0
+numpy>=1.26
+opencv-python>=4.9
+pynput>=1.7
+pywin32>=306
+vgamepad>=1.0.0
+pygetwindow>=0.0.9
+
+# For best performance (CUDA), after base install run:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Adjust cu121 to your CUDA version.
+# Ultralytics will use it automatically if available.
+
+# Note: vgamepad requires ViGEmBus driver on Windows for controller emulation (matches original).
